@@ -1,0 +1,174 @@
+body {
+    background-color: #FEFDF8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    margin-top: 70px;
+}
+
+.navbar {
+    background-color: #6F9F62;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; /* 左右對齊 */
+    align-items: center;
+    position: fixed; /* 固定在頁面頂部 */
+    top: 0; /* 距離頂部 0px */
+    left: 0; /* 距離左邊 0px */
+    width: 100%; /* 寬度為 100%，讓它佔滿整個頁面 */
+    z-index: 999; /* 確保它在其他內容之上 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 添加陰影效果 */
+}
+
+
+
+
+.left-nav{
+    list-style: none;
+    display:flex;
+    gap:20px;
+    padding: 0px;
+    margin-left: 20px; 
+}
+
+.right-nav{
+    list-style:none;
+    display: flex;
+    margin-right: 40px; 
+}
+
+.navbar a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Press Start 2P';
+}
+
+.navbar a:hover {
+    color: #FEFDF8;
+}
+
+.question-menu {
+    position: relative; /* 必須設置，讓下拉選單能相對定位 */
+}
+
+
+.question-menu-content{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #FEFDF8;
+    padding: 10px 0;
+    list-style: none;
+    box-shadow: 0 4px 6px rgba(28, 4, 4, 0.1);
+    z-index: 10;
+}
+
+.question-menu-content li{
+    padding: 5px 15px;
+}
+
+.question-menu-content li a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.question-menu-content li a:hover{
+    color: #6F9F62;
+}
+
+.question-menu.active .question-menu-content {
+    display: block;
+}
+
+
+
+.navbar a svg {
+    margin-left: -10px; 
+    margin-bottom: 2px;
+    vertical-align: middle; 
+    height: 25px; 
+}
+.icon path{
+    fill: black;
+}
+
+.navbar a:hover .icon path {
+    fill: #FEFDF8; 
+}
+
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+}
+#about {
+    scroll-margin-top: 90px;
+    text-align: left;
+    line-height: 1.8;
+    scroll-margin-top: 90px; 
+}
+#about li{
+    font-family: 'Noto Sans TC', sans-serif; 
+}
+.about-container img {
+    float: right; 
+    width: 250px; 
+    height: auto; 
+}
+
+.questions{
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h3, h4 {
+    font-family: 'Press Start 2P';
+    font-size: small;
+    color: #54774a;
+}
+p{
+    margin: 5px;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+.question-card {
+    scroll-margin-top: 90px;
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #d9d9d922;
+}
+.question-card p{
+    text-indent: 2em; 
+}
+.question-card li{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+#contact{
+    background-color: #6F9F62;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 180px;
+}
+#contact p{
+    color:#FEFDF8;
+    text-align: left;
+    width: auto; 
+
+}
+#contact p svg {
+    margin-bottom: 2px;
+    vertical-align: middle; 
+    font-size: 15px;
+    height: 20px;
+}
